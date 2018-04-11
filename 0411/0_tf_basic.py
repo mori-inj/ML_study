@@ -24,4 +24,4 @@ sess = tf.Session()
 # sess.run: 설정한 텐서 그래프(변수나 수식 등등)를 실행합니다.
 print(sess.run(hello))
 print(sess.run([a, b, c]))
-sess.close
+sess.close()
