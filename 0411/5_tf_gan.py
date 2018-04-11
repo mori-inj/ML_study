@@ -12,14 +12,14 @@ print(train_x.shape, train_y.shape)
 
 total_epochs = 450
 batch_size = 100
-learning_rate = 0.0002
+learning_rate = 0.0001
 random_size = 100
 image_size = 28*28
 
-init = tf.random_normal_initializer(mean=0.0, stddev=0.1)
+init = tf.random_normal_initializer(mean=0.0, stddev=0.01)
 
 def generator( z , reuse = False ):
-    l = [random_size, 256, 512, image_size]
+    l = [random_size, 128, 256, image_size]
     with tf.variable_scope(name_or_scope = "Gen") as scope:
         gw1 = tf.get_variable(name = "w1", shape = [l[0], l[1]], initializer = init)
         gb1 = tf.get_variable(name = "b1", shape = [l[1]], initializer = init)
@@ -36,7 +36,7 @@ def generator( z , reuse = False ):
 
 
 def discriminator( x , reuse = False):
-    l = [image_size, 512, 256, 1]
+    l = [image_size, 256, 128, 1]
     with tf.variable_scope(name_or_scope="Dis", reuse=reuse) as scope:
         dw1 = tf.get_variable(name = "w1", shape = [l[0], l[1]], initializer = init)
         db1 = tf.get_variable(name = "b1", shape = [l[1]], initializer = init)
@@ -95,14 +95,14 @@ with tf.Session(graph = g) as sess:
             gl, dl = sess.run([g_loss, d_loss], feed_dict = {X : batch_x , Z : noise})
 
 
-        if epoch % 5 == 0:
+        if epoch % 2 == 0:
             print("======= Epoch : ", epoch , " =======")
             print("generator: " , -gl )
             print("discriminator: " , -dl )
 
 
         samples = 20
-        if epoch % 10 == 0:
+        if epoch % 2 == 0:
             sample_noise = random_noise(samples)
             gen = sess.run(fake_x , feed_dict = { Z : sample_noise})
 
