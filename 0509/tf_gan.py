@@ -80,7 +80,7 @@ with tf.Session(graph = g) as sess:
         samples = 20
         if epoch % 2 == 0:
             sample_noise = random_noise(samples)
-            gen = sess.run(fake_x , feed_dict = { Z : sample_noise})
+            gen = sess.run(??? , feed_dict = { Z : sample_noise})
 
             for i in range(samples):
                 img = gen[i].reshape([28,28])
