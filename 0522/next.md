@@ -10,3 +10,5 @@ tf saver
 cnn 해보고 dcgan
 
 https://angrypark.github.io/DCGAN-paper-reading/
+
+cifar 다운로드, 다른 dataset, dcgan비교용, 오버피팅확인, latent walking ,, 
