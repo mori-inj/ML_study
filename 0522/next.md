@@ -8,3 +8,5 @@ tf saver
 다른 데이터에 대해서 시도해보기
 
 cnn 해보고 dcgan
+
+https://angrypark.github.io/DCGAN-paper-reading/
