@@ -32,4 +32,4 @@ for i in range(1000):
     plt.axis('off')
 
     ax.add_artist(shape)
-    fig.savefig('Shape/'+filename)
+    fig.savefig('Shape/'+filename, dpi = 32)
