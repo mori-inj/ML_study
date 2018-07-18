@@ -23,3 +23,18 @@ latent vector add/sub
 
 overfitting & memory
 dcgan 에 대해서도
+
+
+
+
+
+오늘 할거
+일단 dataset 다운로드(3개 + figure?)
+(전부 mnist로)
+vanilla interpolation -> 잘 안되는지 보기
+dcgan interpolation, random이 normal이나 구면 좋은 이유, 찌그러진 latent space 설명
+dcgan arithmetic...을 어떻게 보이면 좋을까 다른 데이터셋이 있으면 좋을것 같은데
+ 
+condition gan
+ 
+다른 데이터셋 시도
