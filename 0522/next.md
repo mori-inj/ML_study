@@ -38,3 +38,8 @@ dcgan arithmetic...을 어떻게 보이면 좋을까 다른 데이터셋이 있�
 condition gan
  
 다른 데이터셋 시도
+
+
+https://drive.google.com/file/d/0B4wZXrs0DHMHMEl1ODVpMjRTWEk/view
+http://www.nurs.or.jp/~nagadomi/animeface-character-dataset/
+https://drive.google.com/drive/folders/0B7EVK8r0v71pWEZsZE9oNnFzTm8
